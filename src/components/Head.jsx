@@ -13,25 +13,25 @@ const Head = () => {
     }
 
   return (
-    <div className='relative  grid grid-flow-col p-6 shadow-lg '>
+    <div className='fixed flex justify-between md:justify-normal w-full z-30 bg-white  md:grid grid-flow-col p-6 shadow-lg '>
         <div className='flex col-span-1 items-center '>
             <img 
-            className='h-6 cursor-pointer '
+            className='h-6 cursor-pointer hidden md:inline '
             src={hambergIcon} onClick={toogleMenuHandler} alt="hamberg" />
             <img
-            className='h-7 ml-5'
+            className='h-7 md:ml-5'
             src={ytLogo} alt="youtube-logo" />
         </div>
-        <div className=' flex items-center'>
+        <div className=' md:flex hidden items-center'>
             <input
-             className='border col-span-10 w-[89%] p-2 rounded-l-2xl '
+             className='border col-span-10 md:w-[89%] p-2 rounded-l-2xl '
              placeholder='Search'
              type="text" />
             <button className='bg-gray-100 px-6 py-[10px] rounded-r-2xl border border-l-0 '><img className='h-5 ' src={searchIcon} alt="" /></button>
         </div>
         <div className=' col-span-1 flex justify-end items-center '>
             <img 
-            className='h-8 pr-11'
+            className='h-8 md:pr-11'
             src= {userIcon} alt="user" />
         </div>
     </div>

@@ -7,10 +7,10 @@ const VideoCard = ({info}) => {
    
     
   return (
-    <div className='w-76 mb-3'>
+    <div className='w-80 md:w-70 mb-3'>
         <img
          className='rounded-xl'
-         src={thumbnails.maxres.url} alt="" />
+         src={thumbnails?.medium.url} alt="" />
         <ul>
             <li className='font-semibold' >{title}</li>
             <li className='text-sm font-semibold font-serif text-black/60 mt-3'>{channelTitle}</li>

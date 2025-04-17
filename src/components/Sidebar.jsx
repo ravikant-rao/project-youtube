@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div className='p-4 w-65 '>
-        <div className=''>
+    <div className='fixed top-[80px] bg-white p-4 w-55 '>
+        <div className='mb-3'>
             <ul className=' '>
-                <li className='py-1 px-7 cursor-pointer hover:bg-gray-400/30 hover:rounded-md'>Home</li>
+               <Link to={"/"}><li className='py-1 px-7 cursor-pointer hover:bg-gray-400/30 hover:rounded-md'>Home</li></Link>
                 <li className='py-1 px-7 cursor-pointer hover:bg-gray-400/30 hover:rounded-md'>Shorts</li>
                 <li className='py-1 px-7 cursor-pointer hover:bg-gray-400/30 hover:rounded-md'>Subscriptions</li>
             </ul>
